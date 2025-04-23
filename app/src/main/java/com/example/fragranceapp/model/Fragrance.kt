@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.Serializable
 
-
+// The data model for when you receive frags from API
 @Serializable
 data class Fragrance(
     val fragrance_name: String,

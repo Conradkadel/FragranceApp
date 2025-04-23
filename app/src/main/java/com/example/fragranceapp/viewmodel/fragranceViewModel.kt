@@ -19,9 +19,6 @@ class FragranceViewModel : ViewModel() {
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 
-    private val _myCollection = MutableStateFlow<List<Fragrance>>(emptyList())
-    val myCollection: StateFlow<List<Fragrance>> = _myCollection.asStateFlow()
-
     init {
         loadFragrances()
     }

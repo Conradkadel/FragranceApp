@@ -1,4 +1,4 @@
-package com.example.fragranceapp.ui.theme.screens
+package com.example.fragranceapp.ui.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
@@ -9,6 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
+
+// Basic Composable with 2 Buttons that navigate the user 
+// to either favorites or home which is the mainList of all fragrance
 @Composable
 fun MainScreen(navController: NavController) {
     Column(
@@ -26,9 +29,9 @@ fun MainScreen(navController: NavController) {
         ) {
             Text("Favorites")
         }
-
+        
         Button(
-            onClick = { navController.navigate("mainList") },
+            onClick = { navController.navigate("home") },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(vertical = 8.dp)

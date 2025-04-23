@@ -10,7 +10,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.fragranceapp.navigation.MainNavigation
 import com.example.fragranceapp.ui.theme.FragranceAPPTheme
-import com.example.fragranceapp.ui.theme.screens.HomeScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FragranceAPPTheme {
                 Surface(modifier = Modifier.fillMaxSize(),color = MaterialTheme.colorScheme.background) {
-
+                    // Creates the main component MainActivity, which is our home layout.
                     MainNavigation()
                 }
             }
